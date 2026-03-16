@@ -1,0 +1,24 @@
+name: Tinderbot
+version: "1.0.0"
+slug: tinderbot
+description: Automates Tinder swiping and messaging from Home Assistant.
+url: https://github.com/alexisdeudon01/Tinderbot
+arch:
+  - amd64
+  - aarch64
+  - armv7
+startup: application
+boot: manual
+init: false
+options:
+  auth_token: ""
+  auto_like: true
+  daily_like_limit: 100
+  send_message: false
+  default_message: "Hey! 👋"
+schema:
+  auth_token: str
+  auto_like: bool
+  daily_like_limit: int
+  send_message: bool
+  default_message: str
